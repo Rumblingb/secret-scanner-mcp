@@ -2,7 +2,7 @@
 """Secret Scanner MCP — Detect leaked API keys, tokens, and secrets in text/files."""
 
 import json, re, os, base64
-from mcp.server import Server, stdio_server
+from mcp.server.lowlevel import Server, stdio_server
 
 server = Server("secret-scanner-mcp")
 
